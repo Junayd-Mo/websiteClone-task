@@ -13,7 +13,6 @@ body {
     background-attachment: fixed;
     background-size: 100% 100%;
     animation: changing-background 60s 2s infinite;
-    animation-timing-function: steps(4,end);
     margin: 0px;
     overflow-y: hidden; 
     overflow-x: hidden; 
@@ -25,6 +24,7 @@ body {
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: 100% 100%;
+
     }
 
     25% {
@@ -59,7 +59,7 @@ body {
 
 
 h1 {
-    font-weight: 1000;
+    font-weight: 1100;
     color: white;
 }
 
@@ -95,6 +95,7 @@ h1 {
 
 .pink {
     background-color: rgb(253, 0, 190);
+    margin-right: 4px;
 }
 
 .circles {
@@ -231,6 +232,10 @@ nav {
     padding: 7px;
 }
 
+.Search:hover {
+    cursor: pointer;
+}
+
 .buttons {
     display: flex;
     flex-direction: row;
@@ -238,8 +243,6 @@ nav {
     justify-content: space-around;
     width: 200px;
 
-    /* position: relative;
-    top: 15px; */
 }
 
 .sign-up { 
@@ -266,10 +269,15 @@ footer a {
     font-weight: 600;
 }
 
+footer a:hover {
+    text-decoration: underline;
+}
+
 footer {
     display: flex;
     flex-direction: column;
     position: relative;
+    align-items: center;
     top: 220px;
 }
 
@@ -282,6 +290,13 @@ footer {
     color: rgb(163, 156, 156);
 }
 
+
 .socials:hover {
     color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    color: rgb(163, 156, 156);
+    cursor: pointer;
 }
