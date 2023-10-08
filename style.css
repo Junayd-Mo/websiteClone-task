@@ -1,0 +1,287 @@
+@font-face {
+    font-family: proximia;
+    src: url(Proxima\ Nova\ Font.otf);
+}
+* {
+    font-family: 'proximia', sans-serif;
+
+}
+
+body {
+    background-image: url(building.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    animation: changing-background 60s 2s infinite;
+    animation-timing-function: steps(4,end);
+    margin: 0px;
+    overflow-y: hidden; 
+    overflow-x: hidden; 
+}
+
+@keyframes changing-background {
+    0% {
+        background-image: url(building.webp);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+    25% {
+        background-image: url(tree.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+    50% {
+        background-image: url(sword.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+    75% {
+        background-image: url(kimino\ nawa.webp);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+    100% {
+        background-image: url(sky.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+}
+
+
+h1 {
+    font-weight: 1000;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.taskbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 64px;
+    width: 100%;
+    margin: 0px;
+    background: rgba(0, 0, 0, 0.3);
+    background-color:rgba(0, 0, 0, 0.25) ;
+
+}
+
+
+
+.circle {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+
+}
+
+.blue {
+    background-color: blue;
+}
+
+.pink {
+    background-color: rgb(253, 0, 190);
+}
+
+.circles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    bottom: 0px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding-left: 7px;
+    align-items: center;
+    position: relative;
+    left: 10px;
+}
+
+input {
+    width: 900px;
+    height: 33px;
+    position: relative;
+    border: none;
+    outline: none;
+    font-size: 14px;
+
+    
+
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 35px;
+    position: relative;
+    top: 15px;
+    width: 1000px;
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    position:absolute;
+    bottom: 0;
+    font-size: 14px;
+
+
+}
+
+.nav-links {
+    text-decoration: none;
+    color: rgb(163, 156, 156);
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh
+    
+}
+
+.main p {
+    color: white;
+
+    font-weight: 600;
+
+}
+
+.statement {
+    font-size: 56px;
+    margin-bottom: 0;
+
+}
+
+.writing  {
+    font-size: 26px;
+}
+
+.writing2 {
+    font-size: 26px ;
+    margin: 0;
+    position: relative;
+    top: -24px;
+}
+
+.main-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 180px;
+}
+
+.startForFree {
+    font-size: 24px;
+    font-weight: 900;
+    color: black;
+    background-color: white;
+    height: 64px;
+    width: 200px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: none;
+    border-radius: 2%;
+
+}
+
+.together {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.plus {
+    color: rgb(163, 156, 156);
+}
+
+
+.Search {
+    color: grey;
+    font-size: 20px;
+    padding: 7px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+
+    /* position: relative;
+    top: 15px; */
+}
+
+.sign-up { 
+    height: 32px;
+    width: 92px;
+    border: none;
+    border-radius: 5%;
+    font-weight: 600;
+    font-family: 'proximia';
+
+}
+
+.login {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 220px;
+}
+
+.nav-links:hover {
+    color: white;
+}
+
+.socials {
+    font-size: 23px;
+    color: rgb(163, 156, 156);
+}
+
+.socials:hover {
+    color: white;
+}
